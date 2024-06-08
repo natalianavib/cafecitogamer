@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game Café</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="announcement">
+            <p>Abiertos de martes a sábado (excepto feriados) de 15:00 a 20.30 hrs.</p>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Descuentos</a></li>
+                <li><a href="#">La Tienda</a></li>
+                <li><a href="#">Reclamos</a></li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" placeholder="Buscar">
+                <a href="#">🛒</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="#" alt="">
+        </section>
+        <section class="info">
+            <div class="info-item">
+                <p>Conoce nuestros eventos en torno a los juegos</p>
+            </div>
+            <div class="info-item">
+                <p>Despéjate del celular con estos juegos</p>
+            </div>
+            <div class="info-item">
+                <p>Disfruta cafés de especialidad</p>
+            </div>
+            <div class="info-item">
+                <p>Arrienda juegos de mesa en nuestra ludoteca</p>
+            </div>
+        </section>
+        
+        <section class="best-sellers">
+            <h2>Best Sellers</h2>
+            <div class="product-list">
+                <!-- Repeat this block for each product -->
+                <div class="product">
+                    <img src="/static/images/cafe1.png" alt="Product Image">
+                    <h3>Café 1</h3>
+                    <p>$1.500</p>
+                </div>
+                <div class="product">
+                    <img src="/static/images/cafe1.png" alt="Product Image">
+                    <h3>Café 1</h3>
+                    <p>$1.500</p>
+                </div>
+                <div class="product">
+                    <img src="/static/images/cafe1.png" alt="Product Image">
+                    <h3>Café 1</h3>
+                    <p>$1.500</p>
+                </div>
+                <div class="product">
+                    <img src="/static/images/cafe1.png" alt="Product Image">
+                    <h3>Café 1</h3>
+                    <p>$1.500</p>
+                </div>
+                <div class="product">
+                    <img src="/static/images/cafe1.png" alt="Product Image">
+                    <h3>Café 1</h3>
+                    <p>$1.500</p>
+                </div>
+                <div class="product">
+                    <img src="/static/images/cafe1.png" alt="Product Image">
+                    <h3>Café 1</h3>
+                    <p>$1.500</p>
+                </div>
+                <!-- End of product block -->
+            </div>
+        </section>
+        <section class="intro">
+            <div class="intro-image">
+                <img src="/static/images/intro.png" alt="Intro Image">
+            </div>
+            <div class="intro-text">
+                <h2>¿Cómo estuvo nuestro servicios?</h2>
+                <p>StartCoffeUp estamos interesados en los reclamos, ingresa tu reclamo y lo solucionaremos lo más pronto posible!</p>
+                
+            </div>
+        </section>
+
+        <section class="complaints">
+            <h2>Reclamos y Felicitaciones</h2>
+            <form action="/submit_complaint" method="post">
+                <label for="rut">Rut:</label>
+                <input type="text" id="rut" name="rut" required>
+                
+                <label for="first_name">Nombre:</label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="last_name">Apellido:</label>
+                <input type="text" id="last_name" name="last_name" required>
+                
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="description">Descripción:</label>
+                <select id="description" name="description" required>
+                    <option value="Reclamo">Reclamo</option>
+                    <option value="Felicitaciones">Felicitaciones</option>
+                </select>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="newsletter">
+            <p>Suscríbete a nuestro newsletter para saber todas las novedades y noticias.</p>
+            <input type="email" placeholder="Ingresa tu email">
+            <button>Enviar</button>
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h3>Sobre nosotros</h3>
+                <p>Nuestros locales</p>
+                <p>Eventos</p>
+            </div>
+            <div class="footer-section">
+                <h3>Servicio al cliente</h3>
+                <p>Contacto</p>
+                <p>FAQ</p>
+            </div>
+            <div class="footer-section">
+                <h3>Información</h3>
+                <p>Políticas de Privacidad</p>
+                <p>Términos y Condiciones</p>
+            </div>
+        </div>
+        
+        <p>&copy; Catalina Díaz - Natalia Navarrete</p>
+    </footer>
+</body>
+</html>
